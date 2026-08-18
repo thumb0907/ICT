@@ -24,7 +24,6 @@
 #include "command_receiver.h"
 #include "status_led.h"
 #include "motor_driver.h"
-#include "drive_controller.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,7 +104,7 @@ int main(void)
       Error_Handler();
   }
 
-  DriveController_Init();
+  MotorDriver_Stop();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -129,11 +128,6 @@ int main(void)
 	  {
 	      buttons = 0U;
 	  }
-
-	  DriveController_Update(
-	      buttons,
-	      link_ok
-	  );
 
 	  StatusLed_Update(buttons, link_ok);
     /* USER CODE END WHILE */
