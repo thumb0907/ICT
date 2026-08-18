@@ -1,0 +1,6 @@
+../Core/Src/motor_driver.c:9:16:MotorDriver_ClampSpeed	16	static
+../Core/Src/motor_driver.c:24:13:MotorDriver_SetChannel	40	static
+../Core/Src/motor_driver.c:93:19:MotorDriver_Init	16	static
+../Core/Src/motor_driver.c:147:6:MotorDriver_SetLeft	24	static
+../Core/Src/motor_driver.c:158:6:MotorDriver_SetRight	24	static
+../Core/Src/motor_driver.c:169:6:MotorDriver_Stop	4	static

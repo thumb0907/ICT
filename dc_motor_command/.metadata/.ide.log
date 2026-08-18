@@ -2262,3 +2262,170 @@
 2026-08-18 21:37:49,190 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 4500mS.
 2026-08-18 21:37:49,194 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 4mS.
 2026-08-18 21:37:49,205 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2026-08-18 21:45:38,061 [INFO] Gpio:277 - dependency for GPIO [USART3]
+2026-08-18 21:46:45,832 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 933571872 Bytes (1073741824)
+2026-08-18 21:46:47,829 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 805840584 Bytes (1073741824)
+2026-08-18 21:46:48,247 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-18 21:46:48,247 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-18 21:46:48,248 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-18 21:46:48,248 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2026-08-18 21:46:48,249 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-18 21:46:48,250 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2026-08-18 21:46:48,373 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\license.tmp_save
+2026-08-18 21:46:48,628 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\license.tmp
+2026-08-18 21:46:48,658 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\gpio.tmp_save
+2026-08-18 21:46:48,839 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\gpio.tmp
+2026-08-18 21:46:48,901 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_it.c_save
+2026-08-18 21:46:49,235 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_it.c
+2026-08-18 21:46:49,246 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_it.h_save
+2026-08-18 21:46:49,337 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_it.h
+2026-08-18 21:46:49,376 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-18 21:46:49,511 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_hal_msp.c
+2026-08-18 21:46:49,518 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\system.tmp_save
+2026-08-18 21:46:49,603 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\system.tmp
+2026-08-18 21:46:49,639 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-18 21:46:49,786 [INFO] CodeEngine:343 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-18 21:46:49,861 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\main.h_save
+2026-08-18 21:46:50,037 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\main.h
+2026-08-18 21:46:50,066 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\main.c_save
+2026-08-18 21:46:50,248 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\main.c
+2026-08-18 21:46:50,790 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 290mS.
+2026-08-18 21:46:50,799 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2026-08-18 21:46:50,921 [INFO] ConfigFileManager:1590 - The Die is : DIE419
+2026-08-18 21:46:54,165 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 3333mS.
+2026-08-18 21:46:54,171 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 6mS.
+2026-08-18 21:46:54,177 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2026-08-18 21:55:08,207 [INFO] Gpio:277 - dependency for GPIO [USART3]
+2026-08-18 21:55:31,067 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:55:36,061 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:55:53,807 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:55:54,031 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:56:31,064 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:56:37,965 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:56:45,619 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:57:00,829 [INFO] Gpio:277 - dependency for GPIO [TIM3, USART3]
+2026-08-18 21:57:07,600 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:57:09,737 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-08-18 21:57:50,852 [INFO] Gpio:277 - dependency for GPIO [TIM3, USART3]
+2026-08-18 22:00:31,824 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
+2026-08-18 22:00:31,825 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.getLocationOnScreen_NoTreeLock(Component.java:2113)
+2026-08-18 22:00:31,826 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.getLocationOnScreen(Component.java:2087)
+2026-08-18 22:00:31,827 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JPopupMenu.show(JPopupMenu.java:982)
+2026-08-18 22:00:31,827 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicComboPopup.show(BasicComboPopup.java:235)
+2026-08-18 22:00:31,828 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicComboPopup.togglePopup(BasicComboPopup.java:1265)
+2026-08-18 22:00:31,829 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicComboPopup$Handler.mousePressed(BasicComboPopup.java:936)
+2026-08-18 22:00:31,830 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6618)
+2026-08-18 22:00:31,830 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398)
+2026-08-18 22:00:31,831 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+2026-08-18 22:00:31,832 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+2026-08-18 22:00:31,832 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+2026-08-18 22:00:31,833 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+2026-08-18 22:00:31,833 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+2026-08-18 22:00:31,835 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTableUI$Handler.repostEvent(BasicTableUI.java:978)
+2026-08-18 22:00:31,836 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTableUI$Handler.adjustSelection(BasicTableUI.java:1140)
+2026-08-18 22:00:31,837 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.plaf.basic.BasicTableUI$Handler.mousePressed(BasicTableUI.java:1068)
+2026-08-18 22:00:31,838 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:288)
+2026-08-18 22:00:31,839 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287)
+2026-08-18 22:00:31,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287)
+2026-08-18 22:00:31,841 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.AWTEventMulticaster.mousePressed(AWTEventMulticaster.java:287)
+2026-08-18 22:00:31,842 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processMouseEvent(Component.java:6618)
+2026-08-18 22:00:31,842 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/javax.swing.JComponent.processMouseEvent(JComponent.java:3398)
+2026-08-18 22:00:31,843 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.processEvent(Component.java:6386)
+2026-08-18 22:00:31,844 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.processEvent(Container.java:2266)
+2026-08-18 22:00:31,845 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4996)
+2026-08-18 22:00:31,846 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2324)
+2026-08-18 22:00:31,846 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+2026-08-18 22:00:31,847 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4948)
+2026-08-18 22:00:31,848 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.processMouseEvent(Container.java:4572)
+2026-08-18 22:00:31,849 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.LightweightDispatcher.dispatchEvent(Container.java:4516)
+2026-08-18 22:00:31,849 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2310)
+2026-08-18 22:00:31,850 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4828)
+2026-08-18 22:00:31,851 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:775)
+2026-08-18 22:00:31,852 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+2026-08-18 22:00:31,853 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+2026-08-18 22:00:31,853 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+2026-08-18 22:00:31,855 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+2026-08-18 22:00:31,855 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:98)
+2026-08-18 22:00:31,856 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:747)
+2026-08-18 22:00:31,857 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+2026-08-18 22:00:31,857 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+2026-08-18 22:00:31,858 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+2026-08-18 22:00:31,859 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:744)
+2026-08-18 22:00:31,860 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2026-08-18 22:00:31,860 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2026-08-18 22:00:31,861 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2026-08-18 22:00:31,862 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2026-08-18 22:00:31,863 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2026-08-18 22:00:31,864 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2026-08-18 22:03:36,387 [INFO] Gpio:277 - dependency for GPIO [TIM3, USART3]
+2026-08-18 22:05:13,085 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 947908504 Bytes (1073741824)
+2026-08-18 22:05:15,114 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 999243680 Bytes (1073741824)
+2026-08-18 22:05:16,032 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2026-08-18 22:05:16,033 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-18 22:05:16,033 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-18 22:05:16,034 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-18 22:05:16,034 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2026-08-18 22:05:16,035 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-18 22:05:16,039 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2026-08-18 22:05:16,190 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\license.tmp_save
+2026-08-18 22:05:16,591 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\license.tmp
+2026-08-18 22:05:16,658 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\gpio.tmp_save
+2026-08-18 22:05:16,885 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\gpio.tmp
+2026-08-18 22:05:17,176 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_it.c_save
+2026-08-18 22:05:17,614 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_it.c
+2026-08-18 22:05:17,637 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_it.h_save
+2026-08-18 22:05:17,792 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_it.h
+2026-08-18 22:05:17,860 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-18 22:05:18,150 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_hal_msp.c
+2026-08-18 22:05:18,160 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\system.tmp_save
+2026-08-18 22:05:18,264 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\system.tmp
+2026-08-18 22:05:18,310 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-18 22:05:18,510 [INFO] CodeEngine:343 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-18 22:05:18,685 [INFO] ApiDbMcu:508 - Load IP Config File for TIM3
+2026-08-18 22:05:18,688 [WARN] IPConfigManager:3747 - IP not found : TIM
+2026-08-18 22:05:18,690 [WARN] CodeGenerator:4198 - IP not found : null
+2026-08-18 22:05:18,757 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\main.h_save
+2026-08-18 22:05:18,965 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\main.h
+2026-08-18 22:05:19,001 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\main.c_save
+2026-08-18 22:05:19,465 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\main.c
+2026-08-18 22:05:20,994 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 946mS.
+2026-08-18 22:05:21,020 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2026-08-18 22:05:21,404 [INFO] ConfigFileManager:1590 - The Die is : DIE419
+2026-08-18 22:05:32,566 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 11549mS.
+2026-08-18 22:05:32,571 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 3mS.
+2026-08-18 22:05:32,591 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2026-08-18 22:10:04,524 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 854585872 Bytes (1073741824)
+2026-08-18 22:10:05,516 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 904917520 Bytes (1073741824)
+2026-08-18 22:10:06,419 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2026-08-18 22:10:06,420 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-08-18 22:10:06,420 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-08-18 22:10:06,420 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-08-18 22:10:06,420 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2026-08-18 22:10:06,421 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-08-18 22:10:06,424 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2026-08-18 22:10:06,658 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\license.tmp_save
+2026-08-18 22:10:07,665 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\license.tmp
+2026-08-18 22:10:07,761 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\gpio.tmp_save
+2026-08-18 22:10:08,102 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\gpio.tmp
+2026-08-18 22:10:08,261 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_it.c_save
+2026-08-18 22:10:08,569 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_it.c
+2026-08-18 22:10:08,581 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_it.h_save
+2026-08-18 22:10:08,690 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_it.h
+2026-08-18 22:10:08,755 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_hal_msp.c_save
+2026-08-18 22:10:08,941 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\stm32f4xx_hal_msp.c
+2026-08-18 22:10:08,953 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\system.tmp_save
+2026-08-18 22:10:09,093 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\MXTmpFiles\system.tmp
+2026-08-18 22:10:09,144 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-08-18 22:10:09,353 [INFO] CodeEngine:343 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\stm32f4xx_hal_conf.h
+2026-08-18 22:10:09,394 [WARN] IPConfigManager:3747 - IP not found : TIM
+2026-08-18 22:10:09,395 [WARN] CodeGenerator:4198 - IP not found : null
+2026-08-18 22:10:09,428 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\main.h_save
+2026-08-18 22:10:09,571 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Inc\main.h
+2026-08-18 22:10:09,617 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\main.c_save
+2026-08-18 22:10:09,866 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor_mobile\Core\Src\main.c
+2026-08-18 22:10:10,418 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 301mS.
+2026-08-18 22:10:10,427 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2026-08-18 22:10:10,539 [INFO] ConfigFileManager:1590 - The Die is : DIE419
+2026-08-18 22:10:14,251 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 3819mS.
+2026-08-18 22:10:14,251 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
+2026-08-18 22:10:14,259 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.

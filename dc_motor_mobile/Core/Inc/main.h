@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -57,6 +59,20 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define LED_LINK_Pin GPIO_PIN_0
+#define LED_LINK_GPIO_Port GPIOB
+#define MOTOR_LEFT_DIR_Pin GPIO_PIN_0
+#define MOTOR_LEFT_DIR_GPIO_Port GPIOG
+#define MOTOR_RIGHT_DIR_Pin GPIO_PIN_1
+#define MOTOR_RIGHT_DIR_GPIO_Port GPIOG
+#define LED_GRIPPER_Pin GPIO_PIN_14
+#define LED_GRIPPER_GPIO_Port GPIOB
+#define MOTOR_LEFT_PWM_Pin GPIO_PIN_6
+#define MOTOR_LEFT_PWM_GPIO_Port GPIOC
+#define MOTOR_RIGHT_PWM_Pin GPIO_PIN_7
+#define MOTOR_RIGHT_PWM_GPIO_Port GPIOC
+#define LED_DRIVE_Pin GPIO_PIN_7
+#define LED_DRIVE_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
