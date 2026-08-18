@@ -1,0 +1,18 @@
+!SESSION 2026-08-18 19:44:36.695 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-08-18 19:45:29.234
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-08-18 19:45:29.242
+!MESSAGE Log4j2 initialized with config file C:\Users\lthst\Desktop\ICT\dc_motor_command\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-08-18 19:45:47.178
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-08-18 19:48:04.266
+!MESSAGE Indexed 'dc_motor_command' (19 sources, 81 headers) in 8.27 sec: 4,626 declarations; 19,569 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0083%)
