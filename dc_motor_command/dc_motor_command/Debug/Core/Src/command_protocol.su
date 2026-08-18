@@ -1,0 +1,3 @@
+../Core/Src/command_protocol.c:6:16:CommandProtocol_CalculateCrc8	24	static
+../Core/Src/command_protocol.c:33:6:CommandProtocol_Init	4	static
+../Core/Src/command_protocol.c:38:19:CommandProtocol_SendButtons	32	static

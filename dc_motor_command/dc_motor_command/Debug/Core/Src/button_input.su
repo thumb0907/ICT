@@ -1,0 +1,4 @@
+../Core/Src/button_input.c:10:16:ButtonInput_ReadRaw	16	static
+../Core/Src/button_input.c:65:6:ButtonInput_Init	8	static
+../Core/Src/button_input.c:72:6:ButtonInput_Update	16	static
+../Core/Src/button_input.c:94:9:ButtonInput_GetState	4	static

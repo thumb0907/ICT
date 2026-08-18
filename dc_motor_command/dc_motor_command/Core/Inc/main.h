@@ -57,6 +57,22 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define BTN_FORWARD_Pin GPIO_PIN_2
+#define BTN_FORWARD_GPIO_Port GPIOE
+#define BTN_BACKWARD_Pin GPIO_PIN_3
+#define BTN_BACKWARD_GPIO_Port GPIOE
+#define BTN_LEFT_Pin GPIO_PIN_4
+#define BTN_LEFT_GPIO_Port GPIOE
+#define BTN_RIGHT_Pin GPIO_PIN_5
+#define BTN_RIGHT_GPIO_Port GPIOE
+#define BTN_GRIPPER1_OPEN_Pin GPIO_PIN_6
+#define BTN_GRIPPER1_OPEN_GPIO_Port GPIOE
+#define BTN_GRIPPER1_CLOSE_Pin GPIO_PIN_7
+#define BTN_GRIPPER1_CLOSE_GPIO_Port GPIOE
+#define BTN_GRIPPER2_OPEN_Pin GPIO_PIN_8
+#define BTN_GRIPPER2_OPEN_GPIO_Port GPIOE
+#define BTN_GRIPPER2_CLOSE_Pin GPIO_PIN_9
+#define BTN_GRIPPER2_CLOSE_GPIO_Port GPIOE
 
 /* USER CODE BEGIN Private defines */
 
