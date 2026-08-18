@@ -1,0 +1,10 @@
+../Core/Src/command_receiver.c:18:16:CommandReceiver_CalculateCrc8	4
+../Core/Src/command_receiver.c:45:13:CommandReceiver_StartReceive	2
+../Core/Src/command_receiver.c:59:13:CommandReceiver_ProcessByte	7
+../Core/Src/command_receiver.c:114:6:CommandReceiver_Init	1
+../Core/Src/command_receiver.c:129:6:CommandReceiver_HandleRxComplete	2
+../Core/Src/command_receiver.c:142:6:CommandReceiver_HandleError	2
+../Core/Src/command_receiver.c:155:9:CommandReceiver_GetButtons	1
+../Core/Src/command_receiver.c:160:9:CommandReceiver_GetSequence	1
+../Core/Src/command_receiver.c:165:6:CommandReceiver_HasReceivedCommand	1
+../Core/Src/command_receiver.c:170:6:CommandReceiver_IsTimedOut	2
