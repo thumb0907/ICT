@@ -1,4 +1,4 @@
-21:32:00 **** Incremental Build of configuration Debug for project dc_motor_command ****
+17:57:28 **** Incremental Build of configuration Debug for project dc_motor_command ****
 make -j8 all 
 arm-none-eabi-size  dc_motor_command.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size  dc_motor_command.elf
 Finished building: default.size.stdout
  
 
-21:32:01 Build Finished. 0 errors, 0 warnings. (took 1s.308ms)
+17:57:29 Build Finished. 0 errors, 0 warnings. (took 328ms)
 

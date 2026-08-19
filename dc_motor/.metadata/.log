@@ -1,0 +1,104 @@
+!SESSION 2026-08-19 18:00:49.211 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-08-19 18:01:39.669
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-08-19 18:01:39.673
+!MESSAGE Log4j2 initialized with config file C:\Users\lthst\Desktop\ICT\dc_motor_mobile\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-08-19 18:01:46.064
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-08-19 18:02:01.875
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39 RUNNING
+	 at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	 at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.defineClass(ModuleClassLoader.java:293)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.defineClass(ClasspathManager.java:774)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findClassImpl(ClasspathManager.java:691)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:657)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClassImpl(ClasspathManager.java:637)
+	 at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:616)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:348)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:414)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:520)
+	 at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	 at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	 at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	 at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	 at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	 at java.base/java.lang.Class.getMethodsRecursive(Class.java:3719)
+	 at java.base/java.lang.Class.getMethod0(Class.java:3705)
+	 at java.base/java.lang.Class.getMethod(Class.java:2393)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.getMethodOrDie(GeneratedMessageV3.java:1926)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.access$1000(GeneratedMessageV3.java:79)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable$SingularFieldAccessor$ReflectionInvoker.<init>(GeneratedMessageV3.java:2261)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable$SingularFieldAccessor.<init>(GeneratedMessageV3.java:2334)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable$SingularMessageFieldAccessor.<init>(GeneratedMessageV3.java:3056)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3$FieldAccessorTable.ensureFieldAccessorsInitialized(GeneratedMessageV3.java:2052)
+	 at com.teamdev.jxbrowser.browser.internal.rpc.CreatePopup.internalGetFieldAccessorTable(CreatePopup.java:45)
+	 at com.teamdev.jxbrowser.deps.com.google.protobuf.GeneratedMessageV3.getDescriptorForType(GeneratedMessageV3.java:133)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.createSubscriptionRequest(CallbackStream.java:98)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.Stream.subscribe(Stream.java:88)
+	 at com.teamdev.jxbrowser.internal.rpc.stream.CallbackStream.set(CallbackStream.java:64)
+	 at com.teamdev.jxbrowser.internal.rpc.ServiceConnectionImpl.set(ServiceConnectionImpl.java:107)
+	 at com.teamdev.jxbrowser.internal.rpc.UniversalServiceConnection.set(UniversalServiceConnection.java:120)
+	 at com.teamdev.jxbrowser.browser.internal.BrowserImpl.set(BrowserImpl.java:795)
+	 at com.teamdev.jxbrowser.browser.internal.BrowserImpl.set(BrowserImpl.java:117)
+	 at com.teamdev.jxbrowser.callback.internal.DefaultCallbacks.set(DefaultCallbacks.java:92)
+	 at com.teamdev.jxbrowser.callback.internal.DefaultCallbacks.lambda$register$0(DefaultCallbacks.java:65)
+	 at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	 at java.base/java.util.Collections$UnmodifiableMap.forEach(Collections.java:1707)
+	 at com.teamdev.jxbrowser.callback.internal.DefaultCallbacks.register(DefaultCallbacks.java:60)
+	 at com.teamdev.jxbrowser.view.swing.BrowserView.<init>(BrowserView.java:130)
+	 at com.teamdev.jxbrowser.view.swing.BrowserView.newInstance(BrowserView.java:89)
+	 at com.st.microxplorer.plugins.userauth.WebApp.<init>(WebApp.java:221)
+	 at com.st.microxplorer.plugins.userauth.WebApp.getInstance(WebApp.java:773)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.getBrowserView(UserAuth.java:488)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.checkInfile(UserAuth.java:251)
+	 at com.st.microxplorer.plugins.userauth.UserAuth.activatePlugin(UserAuth.java:169)
+	 at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:29)
+	 at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+	 at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+	 at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+	 at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	 at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	 at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	 at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2733)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-08-19 18:02:03.617 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-08-19 18:02:42.061
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-08-19 18:02:42.063
+!MESSAGE Log4j2 initialized with config file C:\Users\lthst\Desktop\ICT\dc_motor\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-08-19 18:02:47.519
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-08-19 18:05:20.021 -----------------------------------------------
+eclipse.buildId=Version 1.18.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  C:\Users\lthst\Desktop\ICT\dc_motor\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\lthst\Desktop\ICT\dc_motor\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-08-19 18:05:29.418
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-08-19 18:05:29.421
+!MESSAGE Log4j2 initialized with config file C:\Users\lthst\Desktop\ICT\dc_motor\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-08-19 18:05:33.830
+!MESSAGE Started RMI Server, listening on port 41337
