@@ -1,0 +1,7 @@
+../Core/Src/gripper_servo.c:5:17:GripperServo_ClampPulse	3
+../Core/Src/gripper_servo.c:22:13:GripperServo_SetPulse	5
+../Core/Src/gripper_servo.c:45:19:GripperServo_Init	4
+../Core/Src/gripper_servo.c:96:6:GripperServo_Set1PulseUs	1
+../Core/Src/gripper_servo.c:104:6:GripperServo_Set2PulseUs	1
+../Core/Src/gripper_servo.c:112:6:GripperServo_SetNeutralAll	1
+../Core/Src/gripper_servo.c:123:6:GripperServo_DisableAll	2

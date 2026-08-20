@@ -80,3 +80,17 @@ arm-none-eabi-size  dc_motor.elf
   17056	     12	   1748	  18816	   4980	dc_motor.elf
 Finished building: default.size.stdout
  
+22:23:20 **** Incremental Build of configuration Debug for project dc_motor_command ****
+make -j8 all 
+arm-none-eabi-size  dc_motor_command.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11508	     12	   1660	  13180	   337c	dc_motor_command.elf
+Finished building: default.size.stdout
+ 
+01:36:45 **** Incremental Build of configuration Debug for project dc_motor_command ****
+make -j8 all 
+arm-none-eabi-size  dc_motor_command.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11508	     12	   1660	  13180	   337c	dc_motor_command.elf
+Finished building: default.size.stdout
+ 

@@ -1,5 +1,6 @@
 "./Core/Src/command_receiver.o"
 "./Core/Src/drive_controller.o"
+"./Core/Src/gripper_servo.o"
 "./Core/Src/main.o"
 "./Core/Src/motor_driver.o"
 "./Core/Src/status_led.o"
