@@ -26,6 +26,7 @@ setup(
     entry_points={
         'console_scripts': [
             'station_node = motor_comm.station_node:main',
+            'mobile_node = motor_comm.mobile_node:main',
         ],
     },
 )

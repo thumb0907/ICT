@@ -1,7 +1,7 @@
 #include "motor_driver.h"
 #include "main.h"
 
-#define LEFT_FORWARD_LEVEL   GPIO_PIN_SET
+#define LEFT_FORWARD_LEVEL   GPIO_PIN_RESET
 #define RIGHT_FORWARD_LEVEL  GPIO_PIN_SET
 
 static TIM_HandleTypeDef *motor_timer;
