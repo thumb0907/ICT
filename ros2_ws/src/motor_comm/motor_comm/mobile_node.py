@@ -13,7 +13,7 @@ from .mobile_serial import MobileSerialSender
 TOPIC_NAME = "/mobile_platform/button_state"
 
 UART_SEND_PERIOD_SECONDS = 0.05
-COMMAND_TIMEOUT_SECONDS = 0.2
+COMMAND_TIMEOUT_SECONDS = 0.5
 
 
 class MobileNode(Node):
