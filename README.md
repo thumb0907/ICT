@@ -357,6 +357,14 @@ Sequence: ... | Buttons: 0x00
 
 종료할 때는 각 터미널에서 `Ctrl+C`
 
+### 간편 실행
+
+상황실 Windows에서는 다음 파일을 더블클릭한다.
+
+```text
+C:\Users\lthst\Desktop\start_station.cmd
+```
+
 ## 11. 안전정지
 
 1. 모바일 ROS 노드 watchdog
