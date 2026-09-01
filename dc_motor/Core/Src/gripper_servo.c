@@ -120,7 +120,7 @@ void GripperServo_SetNeutralAll(void)
     );
 }
 
-void GripperServo_DisableAll(void)
+void GripperServo_Disable1(void)
 {
     if (servo_timer == NULL)
     {
@@ -132,10 +132,24 @@ void GripperServo_DisableAll(void)
         TIM_CHANNEL_3,
         0U
     );
+}
+
+void GripperServo_Disable2(void)
+{
+    if (servo_timer == NULL)
+    {
+        return;
+    }
 
     __HAL_TIM_SET_COMPARE(
         servo_timer,
         TIM_CHANNEL_4,
         0U
     );
+}
+
+void GripperServo_DisableAll(void)
+{
+    GripperServo_Disable1();
+    GripperServo_Disable2();
 }

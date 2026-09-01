@@ -1,0 +1,14 @@
+#ifndef GRIPPER_CONTROLLER_H
+#define GRIPPER_CONTROLLER_H
+
+#include <stdbool.h>
+#include <stdint.h>
+
+void GripperController_Init(void);
+
+void GripperController_Update(
+    uint8_t buttons,
+    bool link_ok
+);
+
+#endif

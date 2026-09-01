@@ -5,7 +5,7 @@
 
 #include <stdint.h>
 
-#define GRIPPER_SERVO_MIN_US       1000U
+#define GRIPPER_SERVO_MIN_US       760U
 #define GRIPPER_SERVO_NEUTRAL_US   1500U
 #define GRIPPER_SERVO_MAX_US       2000U
 
@@ -18,5 +18,7 @@ void GripperServo_Set2PulseUs(uint16_t pulse_us);
 
 void GripperServo_SetNeutralAll(void);
 void GripperServo_DisableAll(void);
+void GripperServo_Disable1(void);
+void GripperServo_Disable2(void);
 
 #endif

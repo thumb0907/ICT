@@ -1,0 +1,240 @@
+#include "gripper_controller.h"
+#include "gripper_servo.h"
+
+#define BUTTON_GRIPPER1_OPEN   (1U << 4)
+#define BUTTON_GRIPPER1_CLOSE  (1U << 5)
+#define BUTTON_GRIPPER2_OPEN   (1U << 6)
+#define BUTTON_GRIPPER2_CLOSE  (1U << 7)
+
+/*
+ * 실제 기구물에 맞게 보정할 값
+ */
+#define GRIPPER1_OPEN_US   1475U
+#define GRIPPER1_CLOSE_US  1500U
+
+#define GRIPPER2_OPEN_US       1475U
+#define GRIPPER2_CLOSE_US      1500U
+
+/*
+ * 명령 후 이 시간 동안만 PWM을 출력한다.
+ */
+#define GRIPPER_MOVE_TIME_MS   700U
+
+static uint16_t gripper1_last_pulse;
+static uint16_t gripper2_last_pulse;
+
+/*
+ * 여기부터가 추가할 컨트롤러 상태이다.
+ * 함수 밖에 선언해야 한다.
+ */
+static bool gripper1_active;
+static bool gripper2_active;
+
+static uint32_t gripper1_start_tick;
+static uint32_t gripper2_start_tick;
+
+static uint8_t previous_gripper1_buttons;
+static uint8_t previous_gripper2_buttons;
+
+static void GripperController_Set1(
+    uint16_t pulse_us
+)
+{
+    if (pulse_us == gripper1_last_pulse)
+    {
+        return;
+    }
+
+    GripperServo_Set1PulseUs(pulse_us);
+    gripper1_last_pulse = pulse_us;
+}
+
+static void GripperController_Set2(
+    uint16_t pulse_us
+)
+{
+    if (pulse_us == gripper2_last_pulse)
+    {
+        return;
+    }
+
+    GripperServo_Set2PulseUs(pulse_us);
+    gripper2_last_pulse = pulse_us;
+}
+
+static void GripperController_Disable1(void)
+{
+    GripperServo_Disable1();
+
+    gripper1_last_pulse = 0U;
+    gripper1_active = false;
+}
+
+static void GripperController_Disable2(void)
+{
+    GripperServo_Disable2();
+
+    gripper2_last_pulse = 0U;
+    gripper2_active = false;
+}
+
+void GripperController_Init(void)
+{
+    gripper1_last_pulse = 0U;
+    gripper2_last_pulse = 0U;
+
+    gripper1_active = false;
+    gripper2_active = false;
+
+    gripper1_start_tick = 0U;
+    gripper2_start_tick = 0U;
+
+    previous_gripper1_buttons = 0U;
+    previous_gripper2_buttons = 0U;
+
+    GripperServo_DisableAll();
+}
+
+void GripperController_Update(
+    uint8_t buttons,
+    bool link_ok,
+    uint32_t now_ms
+)
+{
+    uint8_t gripper1_buttons;
+    uint8_t gripper2_buttons;
+
+    if (!link_ok)
+    {
+        GripperController_Disable1();
+        GripperController_Disable2();
+
+        previous_gripper1_buttons = 0U;
+        previous_gripper2_buttons = 0U;
+
+        return;
+    }
+
+    gripper1_buttons =
+        buttons
+        & (BUTTON_GRIPPER1_OPEN
+           | BUTTON_GRIPPER1_CLOSE);
+
+    gripper2_buttons =
+        buttons
+        & (BUTTON_GRIPPER2_OPEN
+           | BUTTON_GRIPPER2_CLOSE);
+
+    /*
+     * 그리퍼 1에 새로운 버튼 입력이 들어온 경우
+     */
+    if (
+        gripper1_buttons
+        != previous_gripper1_buttons
+    )
+    {
+        switch (gripper1_buttons)
+        {
+            case BUTTON_GRIPPER1_OPEN:
+                GripperController_Set1(
+                    GRIPPER1_OPEN_US
+                );
+
+                gripper1_start_tick = now_ms;
+                gripper1_active = true;
+                break;
+
+            case BUTTON_GRIPPER1_CLOSE:
+                GripperController_Set1(
+                    GRIPPER1_CLOSE_US
+                );
+
+                gripper1_start_tick = now_ms;
+                gripper1_active = true;
+                break;
+
+            case 0U:
+                /*
+                 * 버튼을 놓아도 설정된 이동시간까지
+                 * 계속 움직인다.
+                 */
+                break;
+
+            default:
+                /*
+                 * 열기와 닫기를 동시에 누르면 정지한다.
+                 */
+                GripperController_Disable1();
+                break;
+        }
+
+        previous_gripper1_buttons =
+            gripper1_buttons;
+    }
+
+    /*
+     * 그리퍼 2에 새로운 버튼 입력이 들어온 경우
+     */
+    if (
+        gripper2_buttons
+        != previous_gripper2_buttons
+    )
+    {
+        switch (gripper2_buttons)
+        {
+            case BUTTON_GRIPPER2_OPEN:
+                GripperController_Set2(
+                    GRIPPER2_OPEN_US
+                );
+
+                gripper2_start_tick = now_ms;
+                gripper2_active = true;
+                break;
+
+            case BUTTON_GRIPPER2_CLOSE:
+                GripperController_Set2(
+                    GRIPPER2_CLOSE_US
+                );
+
+                gripper2_start_tick = now_ms;
+                gripper2_active = true;
+                break;
+
+            case 0U:
+                break;
+
+            default:
+                GripperController_Disable2();
+                break;
+        }
+
+        previous_gripper2_buttons =
+            gripper2_buttons;
+    }
+
+    /*
+     * 설정 시간이 지나면 그리퍼 1 PWM을 끈다.
+     */
+    if (
+        gripper1_active
+        && (uint32_t)(
+            now_ms - gripper1_start_tick
+        ) >= GRIPPER_MOVE_TIME_MS
+    )
+    {
+        GripperController_Disable1();
+    }
+
+    /*
+     * 설정 시간이 지나면 그리퍼 2 PWM을 끈다.
+     */
+    if (
+        gripper2_active
+        && (uint32_t)(
+            now_ms - gripper2_start_tick
+        ) >= GRIPPER_MOVE_TIME_MS
+    )
+    {
+        GripperController_Disable2();
+    }
+}

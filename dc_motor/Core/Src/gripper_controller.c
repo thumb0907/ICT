@@ -7,14 +7,13 @@
 #define BUTTON_GRIPPER2_CLOSE  (1U << 7)
 
 /*
- * 아래 값은 초기 시험값이다.
- * 기구물에 맞게 반드시 다시 측정해야 한다.
+ * 실제 기구물에 맞게 보정할 값
  */
-#define GRIPPER1_OPEN_US       1450U
-#define GRIPPER1_CLOSE_US      1550U
+#define GRIPPER1_OPEN_US       1180U
+#define GRIPPER1_CLOSE_US      780U
 
-#define GRIPPER2_OPEN_US       1550U
-#define GRIPPER2_CLOSE_US      1450U
+#define GRIPPER2_OPEN_US   1180U
+#define GRIPPER2_CLOSE_US   780U
 
 static uint16_t gripper1_last_pulse;
 static uint16_t gripper2_last_pulse;
@@ -45,15 +44,33 @@ static void GripperController_Set2(
     gripper2_last_pulse = pulse_us;
 }
 
+static void GripperController_Disable1(void)
+{
+    if (gripper1_last_pulse == 0U)
+    {
+        return;
+    }
+
+    GripperServo_Disable1();
+    gripper1_last_pulse = 0U;
+}
+
+static void GripperController_Disable2(void)
+{
+    if (gripper2_last_pulse == 0U)
+    {
+        return;
+    }
+
+    GripperServo_Disable2();
+    gripper2_last_pulse = 0U;
+}
+
 void GripperController_Init(void)
 {
     gripper1_last_pulse = 0U;
     gripper2_last_pulse = 0U;
 
-    /*
-     * 첫 그리퍼 명령을 받기 전에는
-     * PWM을 출력하지 않는다.
-     */
     GripperServo_DisableAll();
 }
 
@@ -65,12 +82,10 @@ void GripperController_Update(
     uint8_t gripper1_buttons;
     uint8_t gripper2_buttons;
 
-    /*
-     * 통신 단절 시 새로운 움직임을 만들지 않고
-     * 마지막 위치를 유지한다.
-     */
     if (!link_ok)
     {
+        GripperController_Disable1();
+        GripperController_Disable2();
         return;
     }
 
@@ -84,6 +99,10 @@ void GripperController_Update(
         & (BUTTON_GRIPPER2_OPEN
            | BUTTON_GRIPPER2_CLOSE);
 
+    /*
+     * 그리퍼 1:
+     * 버튼을 누르는 동안만 PWM 출력
+     */
     switch (gripper1_buttons)
     {
         case BUTTON_GRIPPER1_OPEN:
@@ -100,12 +119,17 @@ void GripperController_Update(
 
         default:
             /*
-             * 버튼 없음 또는 열기/닫기 동시 입력:
-             * 마지막 위치 유지
+             * 버튼을 놓았거나
+             * 열기·닫기를 동시에 누른 경우
              */
+            GripperController_Disable1();
             break;
     }
 
+    /*
+     * 그리퍼 2:
+     * 버튼을 누르는 동안만 PWM 출력
+     */
     switch (gripper2_buttons)
     {
         case BUTTON_GRIPPER2_OPEN:
@@ -121,6 +145,7 @@ void GripperController_Update(
             break;
 
         default:
+            GripperController_Disable2();
             break;
     }
 }
