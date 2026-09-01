@@ -147,7 +147,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* htim)
 
     __HAL_RCC_GPIOD_CLK_ENABLE();
     /**TIM4 GPIO Configuration
-    PD14     ------> TIM4_CH3
+    PD12     ------> TIM4_CH1
     PD15     ------> TIM4_CH4
     */
     GPIO_InitStruct.Pin = GRIPPER1_PWM_Pin|GRIPPER2_PWM_Pin;

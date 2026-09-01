@@ -59,7 +59,7 @@ HAL_StatusTypeDef GripperServo_Init(
      */
     __HAL_TIM_SET_COMPARE(
         servo_timer,
-        TIM_CHANNEL_3,
+        TIM_CHANNEL_1,
         0U
     );
 
@@ -71,7 +71,7 @@ HAL_StatusTypeDef GripperServo_Init(
 
     if (HAL_TIM_PWM_Start(
             servo_timer,
-            TIM_CHANNEL_3
+            TIM_CHANNEL_1
         ) != HAL_OK)
     {
         return HAL_ERROR;
@@ -84,7 +84,7 @@ HAL_StatusTypeDef GripperServo_Init(
     {
         HAL_TIM_PWM_Stop(
             servo_timer,
-            TIM_CHANNEL_3
+            TIM_CHANNEL_1
         );
 
         return HAL_ERROR;
@@ -96,7 +96,7 @@ HAL_StatusTypeDef GripperServo_Init(
 void GripperServo_Set1PulseUs(uint16_t pulse_us)
 {
     GripperServo_SetPulse(
-        TIM_CHANNEL_3,
+        TIM_CHANNEL_1,
         pulse_us
     );
 }
@@ -129,7 +129,7 @@ void GripperServo_Disable1(void)
 
     __HAL_TIM_SET_COMPARE(
         servo_timer,
-        TIM_CHANNEL_3,
+        TIM_CHANNEL_1,
         0U
     );
 }

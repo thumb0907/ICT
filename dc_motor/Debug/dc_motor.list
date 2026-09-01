@@ -1482,9 +1482,9 @@ HAL_StatusTypeDef GripperServo_Init(
  8000ae2:	681b      	ldr	r3, [r3, #0]
  8000ae4:	681b      	ldr	r3, [r3, #0]
  8000ae6:	2200      	movs	r2, #0
- 8000ae8:	63da      	str	r2, [r3, #60]	@ 0x3c
+ 8000ae8:	635a      	str	r2, [r3, #52]	@ 0x34
         servo_timer,
-        TIM_CHANNEL_3,
+        TIM_CHANNEL_1,
         0U
     );
 
@@ -1502,14 +1502,14 @@ HAL_StatusTypeDef GripperServo_Init(
     if (HAL_TIM_PWM_Start(
  8000af4:	4b10      	ldr	r3, [pc, #64]	@ (8000b38 <GripperServo_Init+0x70>)
  8000af6:	681b      	ldr	r3, [r3, #0]
- 8000af8:	2108      	movs	r1, #8
+ 8000af8:	2100      	movs	r1, #0
  8000afa:	4618      	mov	r0, r3
  8000afc:	f001 ff3e 	bl	800297c <HAL_TIM_PWM_Start>
  8000b00:	4603      	mov	r3, r0
  8000b02:	2b00      	cmp	r3, #0
  8000b04:	d001      	beq.n	8000b0a <GripperServo_Init+0x42>
             servo_timer,
-            TIM_CHANNEL_3
+            TIM_CHANNEL_1
         ) != HAL_OK)
     {
         return HAL_ERROR;
@@ -1533,11 +1533,11 @@ HAL_StatusTypeDef GripperServo_Init(
         HAL_TIM_PWM_Stop(
  8000b1c:	4b06      	ldr	r3, [pc, #24]	@ (8000b38 <GripperServo_Init+0x70>)
  8000b1e:	681b      	ldr	r3, [r3, #0]
- 8000b20:	2108      	movs	r1, #8
+ 8000b20:	2100      	movs	r1, #0
  8000b22:	4618      	mov	r0, r3
  8000b24:	f001 fff2 	bl	8002b0c <HAL_TIM_PWM_Stop>
             servo_timer,
-            TIM_CHANNEL_3
+            TIM_CHANNEL_1
         );
 
         return HAL_ERROR;
@@ -1567,9 +1567,9 @@ void GripperServo_Set1PulseUs(uint16_t pulse_us)
     GripperServo_SetPulse(
  8000b46:	88fb      	ldrh	r3, [r7, #6]
  8000b48:	4619      	mov	r1, r3
- 8000b4a:	2008      	movs	r0, #8
+ 8000b4a:	2000      	movs	r0, #0
  8000b4c:	f7ff ff84 	bl	8000a58 <GripperServo_SetPulse>
-        TIM_CHANNEL_3,
+        TIM_CHANNEL_1,
         pulse_us
     );
 }
@@ -1624,12 +1624,12 @@ void GripperServo_Disable1(void)
  8000b82:	681b      	ldr	r3, [r3, #0]
  8000b84:	681b      	ldr	r3, [r3, #0]
  8000b86:	2200      	movs	r2, #0
- 8000b88:	63da      	str	r2, [r3, #60]	@ 0x3c
+ 8000b88:	635a      	str	r2, [r3, #52]	@ 0x34
  8000b8a:	e000      	b.n	8000b8e <GripperServo_Disable1+0x1a>
         return;
  8000b8c:	bf00      	nop
         servo_timer,
-        TIM_CHANNEL_3,
+        TIM_CHANNEL_1,
         0U
     );
 }
@@ -2275,9 +2275,9 @@ static void MX_TIM4_Init(void)
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
  8000f28:	2300      	movs	r3, #0
  8000f2a:	617b      	str	r3, [r7, #20]
-  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
+  if (HAL_TIM_PWM_ConfigChannel(&htim4, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
  8000f2c:	1d3b      	adds	r3, r7, #4
- 8000f2e:	2208      	movs	r2, #8
+ 8000f2e:	2200      	movs	r2, #0
  8000f30:	4619      	mov	r1, r3
  8000f32:	480d      	ldr	r0, [pc, #52]	@ (8000f68 <MX_TIM4_Init+0xfc>)
  8000f34:	f001 ff4a 	bl	8002dcc <HAL_TIM_PWM_ConfigChannel>
@@ -3440,7 +3440,7 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef* htim)
  8001560:	60fb      	str	r3, [r7, #12]
  8001562:	68fb      	ldr	r3, [r7, #12]
     GPIO_InitStruct.Pin = GRIPPER1_PWM_Pin|GRIPPER2_PWM_Pin;
- 8001564:	f44f 4340 	mov.w	r3, #49152	@ 0xc000
+ 8001564:	f44f 4310 	mov.w	r3, #36864	@ 0x9000
  8001568:	617b      	str	r3, [r7, #20]
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
  800156a:	2302      	movs	r3, #2

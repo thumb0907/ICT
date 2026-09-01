@@ -676,3 +676,51 @@
 2026-09-01 19:34:25,494 [INFO] CADModel:165 - CPN selected for project levelSTM32F429ZIT6
 2026-09-01 19:34:25,494 [INFO] CADModel:114 - Register for checkConnection events
 2026-09-01 19:34:25,533 [INFO] OpenFileManager:385 - Restore cursor
+2026-09-01 22:12:00,060 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 989314448 Bytes (1073741824)
+2026-09-01 22:12:03,355 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 740676872 Bytes (1073741824)
+2026-09-01 22:12:04,945 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2026-09-01 22:12:04,945 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: TIM1_8
+2026-09-01 22:12:04,945 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: SYS
+2026-09-01 22:12:04,945 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: RCC
+2026-09-01 22:12:04,945 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: NVIC
+2026-09-01 22:12:04,945 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: USART
+2026-09-01 22:12:04,947 [INFO] BlockDiagram:2775 - set Specific Code input for plugin: GPIO
+2026-09-01 22:12:04,951 [INFO] CodeGenerator:882 - code generatio: config db path: C:\ST\STM32CubeIDE_1.18.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.14.0.202502271554\\db\
+2026-09-01 22:12:05,776 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\MXTmpFiles\license.tmp_save
+2026-09-01 22:12:06,852 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\MXTmpFiles\license.tmp
+2026-09-01 22:12:07,106 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\MXTmpFiles\gpio.tmp_save
+2026-09-01 22:12:07,554 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\MXTmpFiles\gpio.tmp
+2026-09-01 22:12:08,357 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\Core\Src\stm32f4xx_it.c_save
+2026-09-01 22:12:08,752 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\Core\Src\stm32f4xx_it.c
+2026-09-01 22:12:08,796 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\Core\Inc\stm32f4xx_it.h_save
+2026-09-01 22:12:09,045 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\Core\Inc\stm32f4xx_it.h
+2026-09-01 22:12:09,154 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\Core\Src\stm32f4xx_hal_msp.c_save
+2026-09-01 22:12:10,031 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\Core\Src\stm32f4xx_hal_msp.c
+2026-09-01 22:12:10,134 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\MXTmpFiles\system.tmp_save
+2026-09-01 22:12:10,337 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\MXTmpFiles\system.tmp
+2026-09-01 22:12:10,437 [INFO] CodeEngine:319 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\Core\Inc\stm32f4xx_hal_conf.h_save
+2026-09-01 22:12:10,721 [INFO] CodeEngine:343 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\Core\Inc\stm32f4xx_hal_conf.h
+2026-09-01 22:12:10,926 [INFO] ApiDbMcu:508 - Load IP Config File for TIM3
+2026-09-01 22:12:10,956 [INFO] ApiDbMcu:508 - Load IP Config File for TIM4
+2026-09-01 22:12:10,978 [INFO] ApiDbMcu:508 - Load IP Config File for USART3
+2026-09-01 22:12:10,991 [INFO] ApiDbMcu:508 - Load IP Config File for RCC
+2026-09-01 22:12:11,006 [WARN] IPConfigManager:3747 - IP not found : TIM
+2026-09-01 22:12:11,010 [WARN] CodeGenerator:4198 - IP not found : null
+2026-09-01 22:12:11,094 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\Core\Inc\main.h_save
+2026-09-01 22:12:11,409 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\Core\Inc\main.h
+2026-09-01 22:12:11,465 [INFO] CodeEngine:263 - oldGeneratedFile, C:\Users\lthst\Desktop\ICT\dc_motor\Core\Src\main.c_save
+2026-09-01 22:12:11,952 [INFO] CodeEngine:287 - Generated code: C:\Users\lthst\Desktop\ICT\dc_motor\Core\Src\main.c
+2026-09-01 22:12:13,133 [INFO] ProjectBuilder:3324 - Time for Copy HAL[1] : 693mS.
+2026-09-01 22:12:13,161 [INFO] ProjectBuilder:4912 - Project Generator version: 4.6.0-B36
+2026-09-01 22:12:13,531 [INFO] ConfigFileManager:1590 - The Die is : DIE419
+2026-09-01 22:12:13,568 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2026-09-01 22:12:13,598 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2026-09-01 22:12:13,623 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2026-09-01 22:12:13,656 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2026-09-01 22:12:13,689 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2026-09-01 22:12:13,738 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2026-09-01 22:12:13,775 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST
+2026-09-01 22:12:16,696 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-09-01 22:12:24,491 [INFO] ProjectBuilder:5191 - Time for Generating toolchain IDE Files: 11331mS.
+2026-09-01 22:12:24,494 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 1mS.
+2026-09-01 22:12:24,503 [INFO] ProjectBuilder:3181 - Time for Copy CMSIS : 0mS.
