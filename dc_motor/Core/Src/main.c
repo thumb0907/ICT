@@ -26,6 +26,7 @@
 #include "motor_driver.h"
 #include "drive_controller.h"
 #include "gripper_servo.h"
+#include "gripper_controller.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -115,6 +116,7 @@ int main(void)
   {
       Error_Handler();
   }
+  GripperController_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -140,6 +142,11 @@ int main(void)
 	  }
 
 	  DriveController_Update(
+	      buttons,
+	      link_ok
+	  );
+
+	  GripperController_Update(
 	      buttons,
 	      link_ok
 	  );

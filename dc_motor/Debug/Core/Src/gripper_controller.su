@@ -1,0 +1,4 @@
+../Core/Src/gripper_controller.c:22:13:GripperController_Set1	16	static
+../Core/Src/gripper_controller.c:35:13:GripperController_Set2	16	static
+../Core/Src/gripper_controller.c:48:6:GripperController_Init	8	static
+../Core/Src/gripper_controller.c:60:6:GripperController_Update	24	static
