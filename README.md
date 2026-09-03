@@ -467,6 +467,9 @@ RIGHT_FORWARD_LEVEL = GPIO_PIN_SET
 
 ## 14. 현재 구현 상태
 
+모바일 카메라·VLM과 상황실 웹 영상 시청은
+[카메라/VLM 실행 안내](test-main/test-main/README.md)를 참고하세요.
+
 - [x] 상황실 버튼 입력
 - [x] 버튼 디바운싱
 - [x] UART 패킷 및 CRC-8

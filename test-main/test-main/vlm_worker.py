@@ -4,6 +4,7 @@ import time
 import shutil
 import asyncio
 import io
+from pathlib import Path
 
 import edge_tts
 import pygame
@@ -15,8 +16,9 @@ from google import genai
 # =========================
 # 설정
 # =========================
-WATCH_DIR = "./content/inbox"
-PROCESSED_DIR = "./content/processed"
+BASE_DIR = Path(__file__).resolve().parent
+WATCH_DIR = str(BASE_DIR / "content" / "inbox")
+PROCESSED_DIR = str(BASE_DIR / "content" / "processed")
 
 GEMINI_MODEL = "gemini-3.1-flash-lite"
 

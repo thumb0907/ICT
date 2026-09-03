@@ -1,0 +1,10 @@
+# Use the existing working camera/ML environment when available.
+# CUDA-enabled PyTorch installation depends on the target laptop/GPU.
+numpy
+opencv-python
+pyrealsense2
+ultralytics
+google-genai
+Pillow
+edge-tts
+pygame
